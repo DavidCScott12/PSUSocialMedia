@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1045841544307",
+    "project_id": "psustudentsocalmedia",
+    "storage_bucket": "psustudentsocalmedia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045841544307:android:8d1c3add997f149abd5606",
+        "android_client_info": {
+          "package_name": "com.example.psusocialmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045841544307-pvr8r5f23e4hhu490n08lieejqjdimrv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.psusocialmedia",
+            "certificate_hash": "3a47588c8fafb038544cdba1712afee7c1d1e7d2"
+          }
+        },
+        {
+          "client_id": "1045841544307-dahnuj0ke8hjqangnp7p0c68af0uc844.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLQbsFjtOQB6ylhG4Xl9pav8hHc_ZzOEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045841544307-dahnuj0ke8hjqangnp7p0c68af0uc844.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
