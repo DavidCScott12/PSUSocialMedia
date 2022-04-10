@@ -51,16 +51,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Birth Date"
-            android:layout_weight="3"/>
+            android:layout_weight="3"
+            />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Apply"
-            android:layout_weight="1"/>
-
-
-
+            android:layout_weight="1"
+            />
 
     </LinearLayout>
 </LinearLayout>
