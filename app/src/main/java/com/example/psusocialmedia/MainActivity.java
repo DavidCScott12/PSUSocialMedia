@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 
@@ -20,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button_SignOut = findViewById(R.id.button_SignOut);
+
+
+        button_SignOut = findViewById(R.id.button_signOut);
         auth = FirebaseAuth.getInstance();
 
         button_SignOut.setOnClickListener(new View.OnClickListener() {
@@ -34,14 +38,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-//        if (user == null) {
-//            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-//            startActivity(intent);
-//            finish();
-//        }
+//
 
 
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 }
