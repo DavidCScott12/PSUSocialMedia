@@ -19,43 +19,41 @@
         android:gravity="center">
 
 
-        <Button
-            android:id="@+id/stopwatchBtn"
+        <ImageButton
+            android:id="@+id/button_addclass"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="3"
             android:background="@color/white"
             android:fontFamily="sans-serif-medium"
-            android:text="Stopwatch"
+            android:src="@drawable/ic_baseline_add_24"
             android:textColor="@android:color/holo_red_dark"
             android:textColorHighlight="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/intervalBtn"
             app:layout_constraintEnd_toStartOf="@+id/intervalBtn"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_weight="3"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
+        <ImageButton
             android:id="@+id/intervalBtn"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="Interval"
             android:textColor="@android:color/holo_red_dark"
             app:layout_constraintBottom_toBottomOf="@+id/timerBtn"
             app:layout_constraintEnd_toStartOf="@+id/timerBtn"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/stopwatchBtn"
+            app:layout_constraintStart_toEndOf="@+id/button_addclass"
             android:layout_weight="3"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/timerBtn"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:text="Timer"
             android:textColor="@android:color/holo_red_dark"
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,13 +83,5 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.99" />
-
-    <Button
-        android:id="@+id/button_signOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Out"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
