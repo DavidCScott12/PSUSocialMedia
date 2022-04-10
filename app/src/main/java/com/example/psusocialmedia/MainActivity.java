@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     AlertDialog dialogAddClass;
     Button button_upload;
     ImageButton button_add;
+    ImageButton button_scedule;
     EditText subject_et;
     EditText classnumber_et;
     EditText section_et;
@@ -72,12 +73,21 @@ public class MainActivity extends AppCompatActivity {
                 showAddClassDialogue();
             }
         });
+        button_scedule = findViewById(R.id.button_scedule);
+        button_scedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, schedule.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+
         user = FirebaseAuth.getInstance().getCurrentUser();
         if (user == null) {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
