@@ -37,17 +37,13 @@
             android:layout_weight="1" />
 
     </LinearLayout>
-    <LinearLayout android:gravity = "right" android:layout_height='wrap_content' android:layout_width="wrap_content">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#42f5b6"
-            android:text="+"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textAlignment="center" />
 </LinearLayout>
 
 

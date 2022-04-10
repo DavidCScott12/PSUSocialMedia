@@ -169,14 +169,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 user = FirebaseAuth.getInstance().getCurrentUser();
-                String email = user.getEmail();
-                String subject = subject_et.getText().toString();
-                String classNum = classnumber_et.getText().toString();
-                String section = section_et.getText().toString();
+                String email = "E"+user.getEmail();
+                String subject = "U"+subject_et.getText().toString();
+                String classNum = "C"+classnumber_et.getText().toString();
+                String section = "S"+section_et.getText().toString();
 
                 if(!TextUtils.isEmpty(email) || !TextUtils.isEmpty(subject) || !TextUtils.isEmpty(classNum) || !TextUtils.isEmpty(section))
                 {
-                    String[] data = {email, subject,classNum,section};
+                    String[] data = {email,subject,classNum,section};
                     saveToFireBase(data);
                     dialogAddClass.dismiss();
             }else{
