@@ -44,6 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
         progressbar_register = findViewById(R.id.progressbar_register);
         mAuth = FirebaseAuth.getInstance();
 
+
         register_checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -81,16 +82,16 @@ public class RegisterActivity extends AppCompatActivity {
                                     sendToMain();
                                 }else{
                                     String Error = task.getException().getMessage();
-                                    Toast.makeText(RegisterActivity.this,"Error: "+Error, Toast.LENGTH_SHORT);
+                                    Toast.makeText(RegisterActivity.this,"Error: "+Error, Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
                     }else{
                         progressbar_register.setVisibility(View.INVISIBLE);
-                        Toast.makeText(RegisterActivity.this,"Passwords Do Not Match", Toast.LENGTH_SHORT);
+                        Toast.makeText(RegisterActivity.this,"Passwords Do Not Match", Toast.LENGTH_SHORT).show();
                     }
                 }else{
-                    Toast.makeText(RegisterActivity.this,"Please Fill All Fields", Toast.LENGTH_SHORT);
+                    Toast.makeText(RegisterActivity.this,"Please Fill All Fields", Toast.LENGTH_SHORT).show();
                 }
             }
         });
