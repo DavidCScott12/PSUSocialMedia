@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     Button button_upload;
     ImageButton button_add;
     ImageButton button_scedule;
+    ImageButton button_shared;
     EditText subject_et;
     EditText classnumber_et;
     EditText section_et;
@@ -78,6 +79,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, schedule.class);
+                startActivity(intent);
+            }
+        });
+
+        button_shared = findViewById(R.id.button_shared);
+        button_shared.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, shareActivity.class);
                 startActivity(intent);
             }
         });

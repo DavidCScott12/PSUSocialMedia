@@ -1,6 +1,5 @@
 package com.example.psusocialmedia;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,11 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.storage.FirebaseStorage;
@@ -26,8 +22,6 @@ import com.google.firebase.storage.StorageReference;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
 
 public class schedule extends AppCompatActivity {
@@ -63,7 +57,6 @@ public class schedule extends AppCompatActivity {
         setContentView(R.layout.activity_schedule);
 
 
-        int i = 0;
         user = FirebaseAuth.getInstance().getCurrentUser();
         storage = FirebaseStorage.getInstance();
         storageRef = storage.getReference();
@@ -147,7 +140,7 @@ public class schedule extends AppCompatActivity {
         }
 
     public void populate(String[] database){ ;
-            dynamicclasses = findViewById(R.id.dynamicclasses);
+            dynamicclasses = findViewById(R.id.partners);
             arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, database);
             //arrayAdapter.add("Subject: "+allSubjects.get(arrl)+"\nClass: "+allClassNum.get(arrl)+"\nSection: "+allSections.get(arrl));
             dynamicclasses.setAdapter(arrayAdapter);
