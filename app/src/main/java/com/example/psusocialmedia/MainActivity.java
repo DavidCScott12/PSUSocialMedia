@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
     Button button_SignOut;
     FirebaseAuth auth;
+
+    private ContactsContract.Profile profile;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
