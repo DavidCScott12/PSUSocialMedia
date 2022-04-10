@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:textColor="@android:color/holo_red_dark"
-        android:text="Sign In"
+        android:text="Register"
         android:layout_margin="20dp"
         android:id="@+id/button_register"
         android:textSize="25sp"
@@ -97,14 +97,14 @@
         android:textColor="@android:color/holo_red_dark"
         android:text="Login"
         android:layout_margin="10dp"
-        android:id="@+id/button_login_sign_up"
+        android:id="@+id/button_sign_up_login"
         android:textSize="25sp"
         />
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/progressbar_login"
+        android:id="@+id/progressbar_register"
         android:indeterminate="true"
         android:indeterminateTint="@color/white"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"

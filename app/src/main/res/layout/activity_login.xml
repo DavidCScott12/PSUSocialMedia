@@ -33,6 +33,7 @@
         android:drawableLeft="@drawable/custom_email_input"
         android:paddingStart="10dp"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         />
 
     <EditText
@@ -49,6 +50,7 @@
         android:background="@drawable/custom_input"
         android:drawableLeft="@drawable/custom_lock_input"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         />
     <CheckBox
         android:layout_width="200dp"
